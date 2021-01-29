@@ -5,7 +5,7 @@ body{
 }
 
 .header{
-    background-color: #557174;
+    background-color: #222831;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -52,13 +52,13 @@ h1{
     font-weight: normal;
     letter-spacing: -.2;
     text-transform: capitalize;
-    color: #f7f7e8;
+    color: #eeeeee;
     margin: 0;
 }
 
 .link{
     text-decoration: none;
-    color: white;
+    color: #eeeeee;
     display: flex;
     height: 90px;
     align-items: center;
@@ -68,7 +68,7 @@ h1{
 
 .main{
     height: 300px;
-    background-color: #c7cfb7;
+    background-color: #00adb5;
     display: flex;
     align-items: center;
     padding: 30px;
@@ -76,7 +76,7 @@ h1{
 }
 
 .main span{
-    color: #557174; 
+    color: #393e46; 
 }
 
 .main figure{
@@ -94,19 +94,19 @@ h2{
     margin: 0px;
     padding: 30px 0px;
     text-transform: uppercase;
-    color:#557174;
+    color:#393e46;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
 }
 
 .projects{
     padding: 0px 30px 10px 30px;
-    background-color: #f7f7e8;
+    background-color: #eeeeee;
 }
 
 .project{
     border-radius: 5px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px #393e46;
     margin-bottom: 40px;
     padding: 30px;
     margin: 0px 0px 30px 0px;
@@ -160,17 +160,15 @@ h2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* background-color: #f7f7e8; */
 }
 
 .experience{
-    /* border: 1px solid blue; */
     margin: 0px 20px 40px 0px;
     width: 400px;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
-    background-color: #f4f5db;
+    background-color: #00adb5;
 }
 
 .experience-container_image{
@@ -201,12 +199,12 @@ h2{
 }
 
 .experience-down input{
-    border: 1px solid #557174;
+    border: 2px solid #393e46;
     padding: 10px 25px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #f7f7e8;
-    color: #557174;
+    background-color: #eeeeee;
+    color: #393e46;
 
 }
 
@@ -215,7 +213,8 @@ h2{
 }
 
 .footer{
-    background-color: #c7cfb7;
+    background-color: #222831;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,10 +234,11 @@ h2{
 
 .contact{
     display: flex;
-    background-color: #9dad7f;
+    background-color: #00adb5;
     padding: 30px 30px 30px 30px;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 
@@ -248,7 +248,7 @@ h2{
 }
 
 .contact-form input{
-    border-color: gray;
+    border-color: #393e46;
     border-style: solid;
     padding: 5px 5px 5px 35px;
     border-radius: 5px;
@@ -262,20 +262,21 @@ h2{
 
 .contact-form button{
     display: block;
-    border: 1px solid white;
+    border: 2px solid #393e46;
     padding: 5px 25px;
     cursor: pointer;
     font-size: 16 px;
-    background-color: transparent;
+    background-color: #eeeeee;
     margin-top: 10px;
     border-radius: 5px;
     margin-top: 10px;
+    color: #393e46;
 
 }
 
 .contact-form h2{
     padding: 0px;
-    
+    color: #393e46;
 }
 
 .redes{

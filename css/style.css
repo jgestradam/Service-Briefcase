@@ -11,12 +11,12 @@ body{
     justify-content: space-between;
     height: 70px;
     align-items: center;
-    /* padding: 30px; */
+
 }
 
 .header figure{
     margin: 0px 0px 0px 0px;
-    height: inherit;
+    height: inherit;  
 }
 
 .header figure img{
@@ -83,11 +83,14 @@ h1{
     margin: 0px;
     width: 500;
     height: inherit;
+    border-radius: 100%;
 }
 
 .main img{
     width: inherit;
     height: inherit;
+    border-radius: inherit;
+    filter: grayscale(100%);
 }
 
 h2{
@@ -140,6 +143,7 @@ h2{
 .project-description{
     margin: 20px 0px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .project-left{
@@ -147,12 +151,14 @@ h2{
 }
 
 .project-container_image{
-    width: 500px;
+    width: 450px;
+    border-radius: 20px;
     
 }
 
 .project-image{
     width: inherit;
+    border-radius: inherit;
 }
 
 .experiences{
@@ -168,7 +174,7 @@ h2{
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
-    background-color: #eeeeee;
+    background-color: #00adb5;
 }
 
 .experience-container_image{
@@ -205,7 +211,7 @@ h2{
     border-radius: 5px;
     background-color: #eeeeee;
     color: #393e46;
-
+    
 }
 
 .experice-mainTitle{
@@ -229,7 +235,8 @@ h2{
 
 .footer-details img{
     height: 20px;
-    margin-left: 15px;    
+    margin-left: 5px;    
+
 }
 
 .contact{
@@ -238,10 +245,7 @@ h2{
     padding: 30px 30px 30px 30px;
     justify-content: space-between;
     align-items: center;
-    
 }
-
-
 
 .contact-form{
     margin-left: 0px;
@@ -271,7 +275,6 @@ h2{
     border-radius: 5px;
     margin-top: 10px;
     color: #393e46;
-
 }
 
 .contact-form h2{
@@ -309,7 +312,6 @@ h2{
     background-size: 50px 50px;
 }
 
-
 .wrapper{
     margin: 0px auto;
     display: inherit;
@@ -318,5 +320,4 @@ h2{
     height: inherit;
     width: 1000px;
     flex-wrap: inherit;
-
 }

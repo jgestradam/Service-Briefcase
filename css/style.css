@@ -5,6 +5,28 @@ body{
     font-size: 16px;
 }
 
+/* .container_menu_ham{
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    margin: 11px;
+}
+.menu_ham{
+
+}
+
+.menu{
+    position: fixed;
+    z-index: 300;
+    background-color: rgba(255, 0, 0, 0.274);
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+} */
+
 .header{
     background-color: #222831;
     margin: 0;
@@ -357,6 +379,34 @@ h2{
 }
 
 @media screen and (max-width : 768px){
+
+    .container_menu_ham{
+        margin: 0;
+        position: fixed;
+        z-index: 100;
+        margin: 11px;
+        display: block;
+    }
+    .menu_ham{
+    
+    }
+    
+    .menu{
+        position: fixed;
+        z-index: 300;
+        background-color: rgba(0, 0, 0, 0.418);
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
     .header{
         height: auto;
         display: block;
@@ -364,12 +414,19 @@ h2{
     
     ul{
         display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu.menu_active{
+        left: 0;
     }
 
     .link{
         justify-content: center;
         margin: 0px 0px;
         padding: 10px 10px;
+        font-size: 2rem;
     }
 
     .link:hover{
@@ -429,6 +486,7 @@ h2{
     .experice-mainTitle{
         padding: 1.5rem ;
     }
+
 }
 
 @media screen and (max-width:690px){

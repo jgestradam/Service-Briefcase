@@ -97,7 +97,7 @@ h1{
 
 h2{
     margin: 0px;
-    padding: 1.5rem 0px;
+    padding: 1.5rem 0;
     text-transform: uppercase;
     color:#393e46;
     font-family: 'Source Sans Pro', sans-serif;
@@ -106,16 +106,16 @@ h2{
 }
 
 .projects{
-    padding: 0px 1.5rem 10px 1.5rem;
+    padding: 0px 1.5rem 1.5rem 1.5rem;
     background-color: #eeeeee;
 }
 
 .project{
     border-radius: 10px;
     box-shadow: 0px 0px 10px #393e46;
-    margin-bottom: 40px;
+    margin-bottom: 1.5rem;
     padding: 4%;
-    margin: 0px 0px 1.8rem 0px;
+    margin: 0px 0px 1.5rem 0px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -166,15 +166,15 @@ h2{
 }
 
 .experiences{
-    padding: 0px 30px;
+    padding: 0px 1.5rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .experience{
-    margin: 0px 20px 40px 0px;
-    width: 400px;
+    margin: 0px 1% 2rem 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -183,7 +183,7 @@ h2{
 
 .experience-container_image{
     margin: 0px;
-    width: inherit;
+    width: 100%;
 }
 
 .experience-image{
@@ -191,11 +191,11 @@ h2{
 }
 
 .experience-down{
-    margin: 20px 40px;
-    margin-top: -40px;
+    margin: 0 2rem 2rem 2rem;
+    margin-top: -3rem;
     background-color: white;
     position: relative;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
     border-radius: 10px;
 }
@@ -218,7 +218,8 @@ h2{
 }
 
 .experice-mainTitle{
-    margin-left: 0px;
+    margin: 0px;
+    padding: 1.5rem 0;
 }
 
 .contact{
@@ -378,17 +379,30 @@ h2{
     .project-language, .project-date, .project-link, .project-description{
         margin: 0.6rem 0;
     }
+
+    .experiences{
+        padding: 0px 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .experience{
+        width: 100%;
+    }
+    .experice-mainTitle{
+        padding: 1.5rem ;
+    }
 }
 
 @media screen and (max-width : 480px){
     
     .projects{
-        padding: 0 1.2rem 6px 1.2rem;
+        padding: 0 1rem 1rem 1rem;
     }
     
     .project{
         box-shadow: 0px 0px 6px #393e46;
-        padding: 3%;
+        padding: 4%;
     }
 
     .project h2{
@@ -407,6 +421,25 @@ h2{
 
     .link{
       padding: 0.5rem 0;  
+    }
+
+    .experiences{
+        padding: 0px 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .experience{ 
+        width: 100%;
+    }
+
+    .experience-down{
+        padding: 1rem;
+        margin: -3rem 1rem 1rem 1rem;
+    }
+    .experice-mainTitle{
+        padding: 1rem;
     }
 }
 
@@ -432,6 +465,21 @@ h2{
 
     .project-language, .project-date, .project-link, .project-description{
         margin: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+
+    .experiences{
+        padding: 0px 1rem;
+    }
+
+    .experience-down{
+        padding: 0.8rem;
+        margin: -2rem 0.8rem 0.8rem 0.8rem;
+    }
+    .experience-title{
+        font-size: 1rem;
+    }
+    .experience-description{
         font-size: 0.9rem;
     }
 

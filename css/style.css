@@ -219,13 +219,13 @@ h2{
 
 .experice-mainTitle{
     margin: 0px;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 1.5rem 1.5rem;
 }
 
 .contact{
     display: flex;
     background-color: #00adb5;
-    padding: 30px 30px 30px 30px;
+    padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -261,6 +261,7 @@ h2{
 }
 
 .contact-form h2{
+
     padding: 0px;
     color: #393e46;
 }
@@ -270,29 +271,29 @@ h2{
 }
 
 .redes-link{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
 }
 
 .redes-link.github{
     background-image: url(../img/github.svg);
-    background-size: 50px 50px;
+    background-size: 3rem 3rem;
 }
 
 .redes-link.facebook{
     background-image: url(../img/facebook.svg);
-    background-size: 50px 50px;
+    background-size: 3rem 3rem;
 }
 
 .redes-link.instagram{
     background-image: url(../img/instagram.svg);
-    background-size: 50px 50px;
+    background-size: 3rem 3rem;
 }
 
 .redes-link.twitter{
     background-image: url(../img/twitter.svg);
-    background-size: 50px 50px;
+    background-size: 3rem 3rem;
 }
 
 .footer{
@@ -301,8 +302,8 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    height: 90px;
+    padding: 1.5rem;
+    height: auto;
     flex-wrap: wrap;
 }
 
@@ -335,17 +336,21 @@ h2{
         height: auto;
         display: block;
     }
+    
     ul{
         display: block;
     }
+
     .link{
         justify-content: center;
         margin: 0px 0px;
         padding: 10px 10px;
     }
+
     .link:hover{
         background-color: #2e3033;
     }
+
     .header figure{
         display: flex;
         justify-content: center;
@@ -364,38 +369,63 @@ h2{
         padding: 2%;
         box-shadow: 0px 0px 8px #393e46;
     }
+
     .project-left{
         width: auto;
     }
+
     .project-container_image{
         width: auto;
     }
+
     .project-title{
         font-size: 1.2rem;
     }
+
     .project-description{
         font-size: 1rem;
     }
+
     .project-language, .project-date, .project-link, .project-description{
         margin: 0.6rem 0;
     }
 
     .experiences{
         padding: 0px 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
+
     .experience{
         width: 100%;
     }
+
     .experice-mainTitle{
         padding: 1.5rem ;
     }
 }
 
+@media screen and (max-width:690px){
+    .contact{
+        justify-content: center;
+    }
+
+    .contact-form{
+        text-align: center;
+    }
+
+    .contact-form button{
+        margin: 1rem auto;
+    }
+
+    .redes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width : 480px){
-    
     .projects{
         padding: 0 1rem 1rem 1rem;
     }
@@ -438,6 +468,7 @@ h2{
         padding: 1rem;
         margin: -3rem 1rem 1rem 1rem;
     }
+
     .experice-mainTitle{
         padding: 1rem;
     }
@@ -476,9 +507,11 @@ h2{
         padding: 0.8rem;
         margin: -2rem 0.8rem 0.8rem 0.8rem;
     }
+
     .experience-title{
         font-size: 1rem;
     }
+
     .experience-description{
         font-size: 0.9rem;
     }

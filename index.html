@@ -12,7 +12,7 @@
 
 <body>  <!-- A important label is use for all our work, the head is for the general instruccion and the body is for the rest for our document -->
     <figure class="container_menu_ham">
-        <img class="menu_ham" src="img/menu.png" alt="MENU">
+        <img class="menu_ham" id="hamburger" src="img/menu.png" alt="MENU">
     </figure>
     
     <header class="header"> <!-- our first part in the page -->
@@ -20,7 +20,7 @@
         <figure > <!-- this label we have a figure but if can see this label es in the class wrapper and wrapper is in header -->
             <img src="img/JE logo white.png" alt="ETC-Caacupé"> <!-- thiS is a simple logo to left in our page i thing that i can use the logo for acces to the main o principal page but  in this case is a page for look or jobs so, is no necesarydo other instruccion for the logo --> 
         </figure> <!-- close figure -->
-        <nav class="menu menu_active"> <!-- A new class for one buttons that we can use for be a better acees to diferents parts in our document -->
+        <nav class="menu"> <!-- A new class for one buttons that we can use for be a better acees to diferents parts in our document -->
             <ul> <!-- use for the link that we can use in our page -->
                 <li><a class="link" href="#">HOME</a></li>
                 <li><a class="link" href="#Proyecto">PROJECTS</a></li> <!-- li for the link and we use the class link  -->
@@ -150,6 +150,48 @@
         <p>Desing by Joseph Estrada</p>
     </div>
     </footer>
+
+    <script>
+        
+       const changes = window.matchMedia('screen and (max-width:768px)');
+
+        /* console.log('Hi, thiS is my fisrt line en JS'); */
+
+        const menu = document.querySelector('.menu');
+
+        /* console.log(menu); */
+
+        const button_ham = document.querySelector('#hamburger');
+
+        /* console.log(button_ham); */
+
+        changes.addListener(validation);
+        
+        function validation(event){
+            if(event.matches){
+                button_ham.addEventListener('click', WatchHiden);
+            }
+            else
+            button_ham.removeEventListener('click', WatchHiden);
+        }
+
+        /* button_ham.addEventListener('click',WatchHiden); */
+
+        validation(changes)
+
+        function WatchHiden(){
+            console.log('hi');
+            if(menu.classList.contains('menu_active')){
+            menu.classList.remove('menu_active');
+            }
+            else{
+                menu.classList.add('menu_active')
+            }
+        }
+
+
+
+    </script>
     
 </body>
 </html>

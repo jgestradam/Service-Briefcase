@@ -411,7 +411,7 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1.5s;
+        transition: 1s;
     } 
 
     .header{

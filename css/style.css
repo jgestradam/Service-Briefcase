@@ -13,6 +13,10 @@ body{
     height: 70px;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .header figure{
@@ -49,9 +53,8 @@ ul{
 
 h1{
     line-height: 1.5;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: normal;
-    letter-spacing: -.2;
     text-transform: capitalize;
     color: #eeeeee;
     margin: 0px;
@@ -72,7 +75,7 @@ h1{
     background-color: #00adb5;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 1.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -83,13 +86,11 @@ h1{
 
 .main figure{
     margin: 0px;
-    width: 500;
     height: inherit;
     border-radius: 100%;
 }
 
 .main img{
-    width: inherit;
     height: inherit;
     border-radius: inherit;
     filter: grayscale(100%);
@@ -273,7 +274,7 @@ h2{
 .redes-link{
     width: 3rem;
     height: 3rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .redes-link.github{
@@ -328,7 +329,28 @@ h2{
     flex-wrap: inherit;
 }
 
-@media screen and (max-width : 1024px){  
+@media screen and (max-width : 1024px){
+    .main{
+        width: auto;
+        position: relative;
+        overflow: hidden;
+    }  
+    h1{
+        z-index: 5;
+    }
+    .main figure{
+        width:auto;
+    }
+    .main figure img{
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        right: 0;
+        bottom: 0;
+        height: inherit;
+        padding: 1.5rem;
+
+    }
 }
 
 @media screen and (max-width : 768px){
@@ -421,6 +443,13 @@ h2{
 
     .redes{
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer-details{
         justify-content: center;
     }
 }

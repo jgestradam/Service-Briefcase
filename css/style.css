@@ -112,7 +112,7 @@ h2{
     border-radius: 5px;
     box-shadow: 0px 0px 10px #393e46;
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 4%;
     margin: 0px 0px 30px 0px;
     background-color: white;
     display: flex;
@@ -120,6 +120,10 @@ h2{
     align-items: center;
     flex-wrap: wrap;
 } 
+
+.project-left{
+    width: 48%;
+}
 
 .project-title{
     margin: 0px;
@@ -148,17 +152,14 @@ h2{
     text-align: justify;
 }
 
-.project-left{
-    width: 500px;
-}
-
 .project-container_image{
-    width: 450px;
+    width: 48%;
     border-radius: 20px; 
+    margin: 0;
 }
 
 .project-image{
-    width: inherit;
+    width: 100%;
     border-radius: inherit;
 }
 
@@ -326,7 +327,7 @@ h2{
 @media screen and (max-width : 1024px){  
 }
 
-@media screen and (max-width : 767px){
+@media screen and (max-width : 768px){
     .header{
         height: auto;
         display: block;
@@ -349,10 +350,57 @@ h2{
         margin: 0px 0px 0px 0px;
         padding: 10px 0px;
     }
+
+    .projects h2{
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+
+    .project{
+        display: block;
+        font-size: 16px;
+        box-shadow: 0px 0px 8px #393e46;
+    }
+    .project-left{
+        width: 100%;
+    }
+    .project-container_image{
+        width: auto;
+    }
+    .project-title{
+        font-size: 1.2em;
+    }
+    .project-description{
+        font-size: 1em;
+    }
+    .project-language, .project-date, .project-link, .project-description{
+        margin: 1em 0;
+    }
 }
 
 @media screen and (max-width : 480px){
+    
+    .projects{
+        font-size: 0.8em;
+        padding: 0 1.2em 0.8em 1.2em;
+    }
+    
+    .project{
+        font-size: 14px;
+        box-shadow: 0px 0px 6px #393e46;
+    }
+
+    .link{
+      padding: 0.5em 0;  
+    }
 }
 
 @media screen and (max-width : 320px){
+    .project{
+        box-shadow: 0px 0px 4px #393e46;
+        margin-bottom: 1em;
+    }
+    .link{
+        padding: 0.4em 0;  
+    }
 }

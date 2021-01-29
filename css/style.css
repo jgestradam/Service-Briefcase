@@ -56,8 +56,11 @@ h1{
     font-size: 2rem;
     font-weight: normal;
     text-transform: capitalize;
-    color: #eeeeee;
+    color: #393e46;
     margin: 0px;
+    /* background-color: rgba(255, 255, 255, 0.308); */
+    padding: 0rem 0.4rem;
+
 }
 
 .link{
@@ -71,7 +74,7 @@ h1{
 }
 
 .main{
-    height: 300px;
+    height: 18rem;
     background-color: #00adb5;
     display: flex;
     align-items: center;
@@ -452,6 +455,14 @@ h2{
     .footer-details{
         justify-content: center;
     }
+    .main figure{
+        
+        display: center;
+        justify-content: center;
+    }
+    .main figure img{
+        display: center;
+        justify-content: center;
 }
 
 @media screen and (max-width : 480px){

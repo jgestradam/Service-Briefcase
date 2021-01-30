@@ -84,7 +84,7 @@ h1{
     font-size: 2rem;
     font-weight: normal;
     text-transform: capitalize;
-    color: #393e46;
+    color: #eeeeee;
     margin: 0px;
     padding: 0rem 0.4rem;
 
@@ -117,13 +117,13 @@ h1{
 .main figure{
     margin: 0px;
     height: inherit;
-    border-radius: 100%;
+    /* border-radius: 100%; */
 }
 
 .main img{
     height: inherit;
-    border-radius: inherit;
-    filter: grayscale(100%);
+    /* border-radius: inherit; */
+    /* filter: grayscale(100%); */
 }
 
 h2{
@@ -252,6 +252,59 @@ h2{
     margin: 0px;
     padding: 1.5rem 0 1.5rem 1.5rem;
 }
+
+.about_me h2{
+ padding: 1.5rem;
+}
+
+.about{
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.about-left{
+    width: 48%;
+}
+
+.about-title{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.about-description{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.about-container-image{
+    width:48%;
+    border-radius: 10px; 
+    margin: 0;
+
+    
+}
+
+.about-image{
+    width: 100%;
+    border-radius: inherit;
+    height: inherit;
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+
 
 .contact{
     display: flex;
@@ -492,6 +545,38 @@ h2{
 
     .experice-mainTitle{
         padding: 1.5rem ;
+    }
+
+    .about{
+        margin: 0 inherit;
+        display: block;
+         
+    }
+
+    .about h2{
+        padding: 0;
+    }
+
+    .about-left{
+        width: auto;
+    }
+
+    .about-container-image{
+        width: inherit;
+        margin: inherit;
+    }
+
+    .about-image{
+        margin: auto;
+        padding: inherit;
+    }
+
+    .about-title{
+        font-size: 1.2rem;
+    }
+
+    .about-description{
+        font-size: 1rem;
     }
 
 }

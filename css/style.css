@@ -254,7 +254,7 @@ h2{
 }
 
 .about_me h2{
- padding: 1.5rem;
+ padding: 0 1.5rem;
 }
 
 .about{
@@ -285,7 +285,7 @@ h2{
 
 .about-container-image{
     width:48%;
-    border-radius: 10px; 
+    border-radius: 0.8rem; 
     margin: 0;
 
     
@@ -297,14 +297,6 @@ h2{
     height: inherit;
     filter: grayscale(100%);
 }
-
-
-
-
-
-
-
-
 
 .contact{
     display: flex;
@@ -662,6 +654,11 @@ h2{
 
     .experice-mainTitle{
         padding: 1rem;
+    }
+
+    .about{
+        margin: 0.5rem;
+        
     }
 }
 
